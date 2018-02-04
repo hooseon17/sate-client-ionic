@@ -1,14 +1,25 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding style="background:#333;color:#eaeaea;text-align:center">
+  <img src='assets/imgs/SATE_LOGO.png' />
+  <p><strong>{{chatbot}}</strong></p>
+  <ion-searchbar
+    [(ngModel)]="food"
+    [showCancelButton]="shouldShowCancel"
+    (ionCancel)="onCancel($event)">
+  </ion-searchbar>
+  <ion-item style="background:#333;">
+    <ion-range min="5" max="5000" [(ngModel)]="radius" color="secondary" style="background:#333;color:#eaeaea">
+      <ion-label range-right>{{radius}}m</ion-label>
+    </ion-range>
+  </ion-item>
+  <button ion-button full style="background:#FF8300" (click)="searchFood()">Search</button>
+  <ion-list *ngFor="let n of list">
+    <ion-card (click)="launchMapUrl(n.location)">
+        <ion-card-header>
+          {{n.name}}
+        </ion-card-header>
+        <ion-card-content style="color:#FF8300">
+          {{n.location}}
+        </ion-card-content>
+      </ion-card>
+  </ion-list>
 </ion-content>
