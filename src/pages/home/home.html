@@ -7,7 +7,7 @@
     (ionCancel)="onCancel($event)">
   </ion-searchbar>
   <ion-item style="background:#333;">
-    <ion-range min="5" max="5000" [(ngModel)]="radius" color="secondary" style="background:#333;color:#eaeaea">
+    <ion-range min="5" max="10000" [(ngModel)]="radius" color="secondary" style="background:#333;color:#eaeaea">
       <ion-label range-right>{{radius}}m</ion-label>
     </ion-range>
   </ion-item>
@@ -20,6 +20,20 @@
         <ion-card-content style="color:#FF8300">
           {{n.location}}
         </ion-card-content>
+        <ion-row>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="ion-star" color="secondary"></ion-icon>
+                <div style="color:#333">{{n.rating}}/5</div>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="ion-clock" color="secondary"></ion-icon>
+                <div style="color:#333">{{n.open}}</div>
+              </button>
+            </ion-col>
+          </ion-row>
       </ion-card>
   </ion-list>
 </ion-content>
