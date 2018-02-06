@@ -1,8 +1,12 @@
 <img border="0" alt="SATE" src="https://github.com/hooseon17/sate-client-angular/blob/master/src/assets/SATE_LOGO_DARK.png" width="18%" height="18%" />
+Your personal restaurant recommendation assistant.
 
 ## Index
 * [SATE Angular App](https://github.com/hooseon17/sate-client-angular)
 * [SATE Server](https://github.com/MajeedMirza/Sate-Server)
+
+## Development conditions
+SATE was built during a hackathon (McHacks) and was developed in less than 24 hours.
 
 ## Inspiration
 The goal was to build an app to help out friends by making the process of selecting a restaurant a lot easier. 
