@@ -6,7 +6,7 @@ Your personal restaurant recommendation assistant.
 * [SATE Server](https://github.com/MajeedMirza/Sate-Server)
 
 ## Development conditions
-SATE was built during a hackathon (McHacks) and was developed in less than 24 hours.
+**SATE** was built during a hackathon (McHacks) and was developed in less than 24 hours.
 
 ## Inspiration
 The goal was to build an app to help out friends by making the process of selecting a restaurant a lot easier. 
